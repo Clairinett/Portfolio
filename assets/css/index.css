@@ -2,26 +2,34 @@
     font-family: 'Rubik', sans-serif;
 }
 
+header {
+    height: 50px;
+}
+
 body {
     background: url(/assets/img/illu-abstrait.jpg) fixed no-repeat;
     background-size: cover;
     padding: 10px;
 }
 
-main {
+h1 {
+    text-align: center;
+    padding: 1em;
+    background-color: #CAE9FF;
+    height: 200px;
+    border-radius: 50px;
+}
+
+#page {
     background-color: #ffffff;
-    padding: 10px;
-    border-radius: 80px;
+    border-radius: 50px;
+    position: relative;
+    top: -95px;
 }
 
 h1, h2, h3 {
     text-transform: uppercase;
     font-style: italic;
-}
-
-h1 {
-    text-align: center;
-    padding: 10px;
 }
 
 section {
