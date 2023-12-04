@@ -15,6 +15,10 @@ header {
     height: 50px;
 }
 
+.offcanvas-backdrop {
+    display: none;
+}
+
 body {
     background: url(/assets/img/illu-abstrait.jpg) fixed no-repeat;
     background-size: cover;
@@ -25,7 +29,7 @@ h1 {
     text-align: center;
     padding: 1em;
     background-color: #CAE9FF;
-    height: 200px;
+    height: 220px;
     border-radius: 50px;
 }
 
@@ -33,7 +37,7 @@ h1 {
     background-color: #ffffff;
     border-radius: 50px;
     position: relative;
-    top: -95px;
+    top: -100px;
 }
 
 h1, h2, h3 {
@@ -52,6 +56,7 @@ h2 {
     background-color: #CAE9FF;
     padding: 15px;
     border-radius: 50px;
+    margin-top: 1em;
 }
 
 #presentation article, #experiences article {
@@ -82,6 +87,34 @@ h2 {
     font-weight: 300;
 }
 
-.offcanvas-backdrop {
-    display: none;
+h3 {
+    align-self: start;
+    padding-top: 1em;
+}
+
+/* COMPETENCES */
+#competences div, #contact div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#competences div:not(#competences div:last-child) {
+    border-bottom: dashed 2px #1E2D4C;
+}
+
+#competences figure, #contact figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#competences figcaption, #contact figcaption {
+    font-size: smaller;
+}
+
+i:not(nav i) {
+    font-size: 2em;
+    padding: 17px;
+    color: #1E2D4C;
 }
