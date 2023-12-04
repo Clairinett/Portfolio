@@ -2,6 +2,15 @@
     font-family: 'Rubik', sans-serif;
 }
 
+b {
+    font-weight: 500;
+    font-size: larger;
+}
+
+p {
+    margin: 0;
+}
+
 header {
     height: 50px;
 }
@@ -36,10 +45,43 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 }
 
 h2 {
     background-color: #CAE9FF;
     padding: 15px;
     border-radius: 50px;
+}
+
+#presentation article, #experiences article {
+    background-color: #1E2D4C;
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#presentation div {
+    background-color: #2F3A58;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#presentation figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentation img {
+    padding: 10px;
+}
+
+.whiteText {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.offcanvas-backdrop {
+    display: none;
 }

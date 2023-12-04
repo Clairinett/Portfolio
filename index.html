@@ -12,12 +12,12 @@
         <script src="https://kit.fontawesome.com/c8c2b8ad31.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
         <title>Portfolio Claire Crinier</title>
     </head>
     <body>
       <header>
-        <nav class="navbar  fixed-top">
+        <nav class="navbar fixed-top">
             <div class="container">
               <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars-staggered"></i>
@@ -25,23 +25,23 @@
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#presentation" aria-current="page">Accueil</a>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                      <a class="nav-link" href="#">Accueil</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
                       <a class="nav-link" href="#competences">Compétences</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
                       <a class="nav-link" href="#experiences">Expériences</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
                       <a class="nav-link" href="#realisations">Réalisations</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
                       <a class="nav-link" href="#contact">Contact</a>
                     </li>
                   </ul>
@@ -52,18 +52,21 @@
       </header>
         
       <main>
-        <h1>Bienvenue sur mon portfolio !</h1>
+        <h1>Bienvenue sur mon portfolio&nbsp;!</h1>
 
         <div id="page">
           <section id="presentation">
-            <Figure>
-              <img src="" alt="Portrait de claire crinier">
-              <figcaption>Claire Crinier</figcaption>
-            </Figure>
-  
-            <div>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            </div>
+            <article>
+              <Figure>
+                <img src="" alt="Portrait de claire crinier">
+                <figcaption class="whiteText"><b>Claire Crinier</b></figcaption>
+              </Figure>
+    
+              <div>
+                <p class="whiteText">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div>
+            </article>
+            
           </section>
   
           <!-- SECTION COMPETENCES -->
@@ -99,7 +102,7 @@
             <h2>Expériences</h2>
             
             <p>Dans le domaine du Développement Web</p>
-            <article>
+            <article class="whiteText">
               <div>
                 <img src="" alt="Logo AFPA">
                 <div>
