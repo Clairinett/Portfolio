@@ -25,7 +25,7 @@
               </button>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h4>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -57,15 +57,14 @@
 
         <div id="page">
           <section id="presentation">
-            <article>
+            <article class="whiteText">
               <Figure>
                 <img src="" alt="Portrait de claire crinier">
-                <figcaption class="whiteText"><b>Claire Crinier</b></figcaption>
+                <figcaption><b>Claire Crinier</b></figcaption>
               </Figure>
-    
-              <div class="textValeur">
-                <p class="whiteText">
-                  Après avoir fait de la boulangerie pâtisserie de l'histoire de l'art et de l'archéologie. Je me suis finalement reconvertie en développeur web.<br><br>
+              <div class="textValeur">  
+                <p >
+                  Après avoir suivie une formation en boulangerie pâtisserie de l'histoire de l'art et de l'archéologie. Je me suis finalement reconvertie en développeur web.<br><br>
                   Pour cela, j'ai suivis une formation de 11 mois, auquel j'ai obtenu mon titre de <strong>Développeur web et web mobile</strong>&nbsp;!
                 </p>
               </div>
@@ -189,55 +188,63 @@
             </div>
   
             <!-- realisation formation / personnel -->
-            <div id="realisationsFormation">
+            <section id="realisationsFormation">
               <span>Application non en ligne</span>
 
-              <figure class="carteRealisation">
-                <img src="/assets/img/capture meteo geo.jpg" alt="Capture du site météo géo">
-                <figcaption class="textHover">
-                  HTML CSS JS Bootstrap API OpenWeatherMap
-                </figcaption>
-                <h4>Application de météo géolocalisé</h4>
-              </figure>
-    
-              <figure class="carteRealisation">
-                <img src="/assets/img/capture vetafpa.jpg" alt="Capture du site Vetafpa">
-                <figcaption class="textHover">
-                  Site de vente de vêtement<br>Wordpress WooCommerce
-                </figcaption>
-                <h4>Site de vente de vêtement</h4>
-              </figure>
-    
-              <figure class="carteRealisation">
-                <img src="/assets/img/capture interface connexion php.jpg" alt="">
-                <figcaption class="textHover">
-                  Interface de connexion<br>HTML CSS PHP XAMPP
-                </figcaption>
-              </figure>
-            </div>
+              <div class="boiteRealisation">
+                <figure class="carteRealisation">
+                  <img src="/assets/img/capture meteo geo.jpg" alt="Capture du site météo géo">
+                  <figcaption class="textHover">HTML CSS JS<br>Bootstrap<br>API OpenWeatherMap<br>
+                    <a target="_blank" href="https://github.com/Clairinett/Projet-Meteo">GitHub du projet<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </figcaption>
+                </figure>
+                <h5>Application de météo géolocalisé</h5>
+              </div>
+
+              <div class="boiteRealisation">
+                <figure class="carteRealisation">
+                  <img src="/assets/img/capture vetafpa.jpg" alt="Capture du site Vetafpa">
+                  <figcaption class="textHover">Wordpress<br>WooCommerce<br>Container docker</figcaption>
+                </figure>
+                <h5>Site de vente de vêtement</h5>
+              </div>
+
+              <div class="boiteRealisation">
+                <figure class="carteRealisation">
+                  <img src="/assets/img/capture interface connexion php.jpg" alt="Capture d'une interface de connexion">
+                  <figcaption class="textHover">HTML CSS PHP<br>PHPmyAdmin<br>XAMPP</figcaption>
+                </figure>
+                <h5>Interface de connexion PHP</h5>
+              </div>
+            </section>
 
             <!-- realisation stage -->
-            <div id="realisationsStage">
-              <figure class="carteRealisation">
-                <img src="" alt="">
-                <figcaption class="textHover"></figcaption>
-              </figure>
-    
-              <figure class="carteRealisation">
-                <img src="" alt="">
-                <figcaption class="textHover"></figcaption>
-              </figure>
-    
-              <figure class="carteRealisation">
-                <img src="" alt="">
-                <figcaption class="textHover"></figcaption>
-              </figure>
+            <section id="realisationsStage">
+              <div class="boiteRealisation">
+                <figure class="carteRealisation">
+                  <img src="" alt="">
+                  <figcaption class="textHover"></figcaption>
+                </figure>
+                <h5>UFL</h5>
+              </div>
+              
+              <div class="boiteRealisation">
+                <figure class="carteRealisation">
+                  <img src="" alt="">
+                  <figcaption class="textHover"></figcaption>
+                </figure>
+                <h5>ACIM</h5>
+              </div>
 
-              <figure class="carteRealisation">
-                <img src="" alt="">
-                <figcaption class="textHover"></figcaption>
-              </figure>
-            </div>
+              <div class="boiteRealisation">
+                <figure class="carteRealisation">
+                  <img src="" alt="">
+                  <figcaption class="textHover"> Integration de contenu sur le nouveau site</figcaption>
+                </figure>
+                <h5>Rondino</h5>
+              </div>
+              
+            </section>
           </section>
   
           <!-- SECTION CONTACT -->
