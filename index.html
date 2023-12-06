@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="/assets/img/logo_claire.png">
         <title>Portfolio Claire Crinier</title>
     </head>
     <body>
@@ -63,7 +64,10 @@
               </Figure>
     
               <div class="textValeur">
-                <p class="whiteText">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="whiteText">
+                  Après avoir fait de la boulangerie pâtisserie de l'histoire de l'art et de l'archéologie. Je me suis finalement reconvertie en développeur web.<br><br>
+                  Pour cela, j'ai suivis une formation de 11 mois, auquel j'ai obtenu mon titre de <strong>Développeur web et web mobile</strong>&nbsp;!
+                </p>
               </div>
             </article>
           </section>
@@ -178,51 +182,62 @@
           <!-- SECTION REALISATIONS -->
           <section id="realisations">
             <h2>Réalisations</h2>
-            <button>Formation / Personnel</button>
-            <button>Stage</button>
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button id="btnFormation" type="button" class="btn btn-secondary">Formation</button>
+              <button id="btnStage" type="button" class="btn btn-secondary">Stage</button>
+            </div>
   
             <!-- realisation formation / personnel -->
-            <figure class="carteRealisation">
-              <img src="/assets/img/capture meteo geo.jpg" alt="Capture du site météo géo">
-              <figcaption class="textHover">
-                Application de météo avec géolocalisation<br>HTML CSS JS Bootstrap API OpenWeatherMap
-              </figcaption>
-            </figure>
-  
-            <figure class="carteRealisation">
-              <img src="/assets/img/capture vetafpa.jpg" alt="Capture du site Vetafpa">
-              <figcaption class="textHover">
-                Site de vente de vêtement<br>Wordpress WooCommerce
-              </figcaption>
-            </figure>
-  
-            <figure class="carteRealisation">
-              <img src="/assets/img/capture interface connexion php.jpg" alt="">
-              <figcaption class="textHover">
-                Interface de connexion<br>HTML CSS PHP XAMPP
-              </figcaption>
-            </figure>
-  
-            <!-- realisation stage -->
-            <figure class="carteRealisation">
-              <img src="" alt="">
-              <figcaption class="textHover"></figcaption>
-            </figure>
-  
-            <figure class="carteRealisation">
-              <img src="" alt="">
-              <figcaption class="textHover"></figcaption>
-            </figure>
-  
-            <figure class="carteRealisation">
-              <img src="" alt="">
-              <figcaption class="textHover"></figcaption>
-            </figure>
+            <div id="realisationsFormation">
+              <span>Application non en ligne</span>
 
-            <figure class="carteRealisation">
-              <img src="" alt="">
-              <figcaption class="textHover"></figcaption>
-            </figure>
+              <figure class="carteRealisation">
+                <img src="/assets/img/capture meteo geo.jpg" alt="Capture du site météo géo">
+                <figcaption class="textHover">
+                  HTML CSS JS Bootstrap API OpenWeatherMap
+                </figcaption>
+                <h4>Application de météo géolocalisé</h4>
+              </figure>
+    
+              <figure class="carteRealisation">
+                <img src="/assets/img/capture vetafpa.jpg" alt="Capture du site Vetafpa">
+                <figcaption class="textHover">
+                  Site de vente de vêtement<br>Wordpress WooCommerce
+                </figcaption>
+                <h4>Site de vente de vêtement</h4>
+              </figure>
+    
+              <figure class="carteRealisation">
+                <img src="/assets/img/capture interface connexion php.jpg" alt="">
+                <figcaption class="textHover">
+                  Interface de connexion<br>HTML CSS PHP XAMPP
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- realisation stage -->
+            <div id="realisationsStage">
+              <figure class="carteRealisation">
+                <img src="" alt="">
+                <figcaption class="textHover"></figcaption>
+              </figure>
+    
+              <figure class="carteRealisation">
+                <img src="" alt="">
+                <figcaption class="textHover"></figcaption>
+              </figure>
+    
+              <figure class="carteRealisation">
+                <img src="" alt="">
+                <figcaption class="textHover"></figcaption>
+              </figure>
+
+              <figure class="carteRealisation">
+                <img src="" alt="">
+                <figcaption class="textHover"></figcaption>
+              </figure>
+            </div>
           </section>
   
           <!-- SECTION CONTACT -->
@@ -243,11 +258,11 @@
       </main>
       
       <footer>
-        <p>Vous êtes au bout</p>
         <a href="#">Remonter ?
           <i class="fa-solid fa-stairs"></i>
         </a>
       </footer>
 
-    </body> 
+    </body>
+    <script src="/assets/js/index.js"></script> 
 </html>

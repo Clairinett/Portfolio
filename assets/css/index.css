@@ -130,6 +130,25 @@ i:not(nav i) {
     padding: 10px;
 }
 
+/* REALISATION */
+.btn-group {
+    align-self: start;
+    padding: 1em 0 1em 0;
+}
+
+#realisations button {
+    background-color: #1E2D4C;
+}
+
+#realisations button:hover {
+    background-color: #2F3A58;
+}
+
+span {
+    font-style: italic;
+    padding: 1em 0 1em 0;
+}
+
 .carteRealisation {
     position: relative;
     width: 230px;
