@@ -100,7 +100,8 @@ h3 {
 #competences div, #contact div {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
 }
 
 #competences div:not(#competences div:last-child) {
@@ -126,7 +127,10 @@ i:not(nav i), footer a i {
 .formation {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.formation img {
+    align-self: center;
 }
 
 /* EXPERIENCES */
@@ -224,3 +228,4 @@ footer a i {
     font-size: 1em;
     padding: 0.5em;
 }
+
