@@ -1,30 +1,24 @@
 * {
     font-family: 'Rubik', sans-serif;
 }
-
 b {
     font-weight: 500;
     font-size: larger;
 }
-
 p {
     margin: 0;
 }
-
 header {
     height: 50px;
 }
-
 .offcanvas-backdrop {
     display: none;
 }
-
 body {
     background: url(/assets/img/illu-abstrait.jpg) fixed no-repeat;
     background-size: cover;
     padding: 10px;
 }
-
 h1 {
     text-align: center;
     padding: 1em;
@@ -32,27 +26,23 @@ h1 {
     height: 220px;
     border-radius: 50px;
 }
-
 #page {
     background-color: #ffffff;
     border-radius: 50px;
     position: relative;
     top: -100px;
 }
-
 h1, h2, h3 {
     text-transform: uppercase;
     font-style: italic;
     color: #1B4965;
 }
-
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
 }
-
 h2 {
     background-color: #CAE9FF;
     padding: 15px;
@@ -67,120 +57,109 @@ h2 {
     border-radius: 50px;
     padding: 10px;
 }
-
 .textValeur {
     background-color: #2F3A58;
-    padding: 18px;
+    padding: 1em;
     border-radius: 50px;
 }
-
+.textNOValeur {
+    padding: 1em;
+}
 #presentation figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #presentation img {
     padding: 10px;
     width: 10em;
     border-radius: 50px;
 }
-
 .whiteText {
     color: #ffffff;
     font-weight: 300;
 }
-
 h3 {
     align-self: start;
     padding-top: 1em;
 }
 
 /* COMPETENCES */
-#competences div, #contact div {
+#competences div {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
 }
-
 #competences div:not(#competences div:last-child) {
     border-bottom: dashed 2px #1E2D4C;
 }
-
 #competences figure, #contact figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #competences figcaption, #contact figcaption {
     font-size: smaller;
 }
-
 i:not(nav i), footer a i {
     font-size: 2em;
     padding: 17px;
     color: #1E2D4C;
 }
-
 .formation {
     display: flex;
     flex-direction: column;
 }
-
 .formation img {
     align-self: center;
 }
 
 /* EXPERIENCES */
-#experiences > article > div:not(#experiences > article > div:first-child) {
-    padding: 10px;
+#experiences > article > div {
+    padding: 0 10px 10px 10px;
 }
 
 .logo {
     width: 9em;
-    padding: 0.5em;
+    padding: 1em;
     border-radius: 20px;
 }
 
-
 /* REALISATION */
+#realisationsPerso, #realisationsFormation, #realisationsProjet  {
+    flex-flow: row wrap;
+    justify-content: center;
+}
 .btn-group {
     align-self: start;
     padding: 1em 0 1em 0;
     flex-wrap: wrap;
 }
-
 .btn-group button:first-child {
     border-radius: 5px 0 0 0;
 }
-
 .btn-group button:nth-child(2) {
     border-radius: 0 5px 0 0 !important;
 }
-
 .btn-group button:last-child {
     border-radius: 0 0 5px 5px !important;
 }
-
 #realisations button {
     background-color: #1E2D4C;
 }
-
 #realisations button:hover {
     background-color: #2F3A58;
 }
-
 .info  {
     font-style: italic;
     padding-bottom: 1em;
+    align-self: flex-start;
 }
-
 .boiteRealisation {
-    margin-bottom: 2em;
+    padding: 0.8em;
+    width: max-content;
 }
-
 h5 {
     text-align: center;
     font-size: smaller;
@@ -188,32 +167,27 @@ h5 {
     padding: 1em;
     margin: 0;
     color: #1B4965;
+    width: 100%;
 }
-
 .carteRealisation figcaption, .carteRealisation p {
     display: flex;
     flex-direction: column;
 }
-
 .carteRealisation > figcaption i, .carteRealisation > p i {
     font-size: smaller;
     padding: 8px;
 }
-
 .carteRealisation {
     position: relative;
     width: 230px;
     margin: 0;
 }
-
 .carteRealisation img {
     width: 100%;
 }
-
 .carteRealisation:hover .textHover {
     opacity: 1;
 }
-
 .textHover {
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
@@ -226,10 +200,15 @@ h5 {
     align-items: center;
     padding: 10px;
 }
-
 .carteProjet {
     background-color: #2F3A58;
     padding: 1em;
+    height: 200px;
+}
+
+/* CONTACT */
+#contact div  {
+    display: flex;
 }
 
 footer a {
@@ -239,9 +218,39 @@ footer a {
     text-decoration: none;
     border-radius: 50px;
 }
-
 footer a i {
     font-size: 1em;
     padding: 0.5em;
 }
 
+@media (min-width:319px) {
+    .btn-group button:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+    .btn-group button:nth-child(2) {
+        border-radius: 0 !important;
+    }
+    .btn-group button:last-child {
+        border-radius: 0 5px 5px 0 !important;
+    }
+}
+@media (min-width:576px) {
+    #presentation article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #presentation > article figure {
+        padding-right: 1em;
+    }
+    #competences:not(#competences h2) {
+        padding: 0 2em 0 2em;
+    }
+    #competences div {
+        justify-content: start;
+    }
+    .formation {
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+}

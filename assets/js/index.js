@@ -9,19 +9,19 @@ secFormation.style.display = "none";
 secProjet.style.display = "none";
 
 btnFormation.addEventListener('click', ()=> {
-    secFormation.style.display ="initial";
+    secFormation.style.display ="inline-flex";
     secPerso.style.display = "none";
     secProjet.style.display = "none";
 })
 
 btnPerso.addEventListener('click', ()=> {
-    secPerso.style.display = "initial";
+    secPerso.style.display = "inline-flex";
     secFormation.style.display ="none";
     secProjet.style.display ="none";
 });
 
 btnProjet.addEventListener('click', ()=> {
-    secProjet.style.display = "initial";
+    secProjet.style.display = "inline-flex";
     secPerso.style.display = "none";
     secFormation.style.display ="none";
 })
