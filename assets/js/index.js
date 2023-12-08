@@ -1,16 +1,27 @@
 const btnFormation = document.getElementById('btnFormation');
-const btnStage = document.getElementById('btnStage');
+const btnPerso = document.getElementById('btnPerso');
 const secFormation = document.getElementById('realisationsFormation');
-const secStage = document.getElementById('realisationsStage');
+const secPerso = document.getElementById('realisationsPerso');
+const btnProjet = document.getElementById('btnProjet');
+const secProjet = document.getElementById('realisationsProjet');
 
-secStage.style.display = "none";
+secFormation.style.display = "none";
+secProjet.style.display = "none";
 
 btnFormation.addEventListener('click', ()=> {
     secFormation.style.display ="initial";
-    secStage.style.display = "none";
+    secPerso.style.display = "none";
+    secProjet.style.display = "none";
 })
 
-btnStage.addEventListener('click', ()=> {
+btnPerso.addEventListener('click', ()=> {
+    secPerso.style.display = "initial";
     secFormation.style.display ="none";
-    secStage.style.display = "initial";
+    secProjet.style.display ="none";
 });
+
+btnProjet.addEventListener('click', ()=> {
+    secProjet.style.display = "initial";
+    secPerso.style.display = "none";
+    secFormation.style.display ="none";
+})

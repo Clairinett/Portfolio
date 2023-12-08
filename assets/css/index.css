@@ -149,6 +149,19 @@ i:not(nav i), footer a i {
 .btn-group {
     align-self: start;
     padding: 1em 0 1em 0;
+    flex-wrap: wrap;
+}
+
+.btn-group button:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+.btn-group button:nth-child(2) {
+    border-radius: 0 5px 0 0 !important;
+}
+
+.btn-group button:last-child {
+    border-radius: 0 0 5px 5px !important;
 }
 
 #realisations button {
@@ -159,15 +172,13 @@ i:not(nav i), footer a i {
     background-color: #2F3A58;
 }
 
-span {
+.info  {
     font-style: italic;
-    padding: 1em 0 1em 0;
-    align-self: start;
+    padding-bottom: 1em;
 }
 
 .boiteRealisation {
     margin-bottom: 2em;
-    
 }
 
 h5 {
@@ -179,12 +190,12 @@ h5 {
     color: #1B4965;
 }
 
-.carteRealisation figcaption {
+.carteRealisation figcaption, .carteRealisation p {
     display: flex;
     flex-direction: column;
 }
 
-.carteRealisation > figcaption i {
+.carteRealisation > figcaption i, .carteRealisation > p i {
     font-size: smaller;
     padding: 8px;
 }
@@ -214,6 +225,11 @@ h5 {
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+.carteProjet {
+    background-color: #2F3A58;
+    padding: 1em;
 }
 
 footer a {
