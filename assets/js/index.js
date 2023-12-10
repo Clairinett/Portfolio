@@ -12,7 +12,7 @@ btnFormation.addEventListener('click', ()=> {
     secFormation.style.display ="inline-flex";
     secPerso.style.display = "none";
     secProjet.style.display = "none";
-})
+});
 
 btnPerso.addEventListener('click', ()=> {
     secPerso.style.display = "inline-flex";
@@ -24,4 +24,13 @@ btnProjet.addEventListener('click', ()=> {
     secProjet.style.display = "inline-flex";
     secPerso.style.display = "none";
     secFormation.style.display ="none";
-})
+});
+
+
+const nav = document.getElementById('offcanvasNavbar');
+
+function navOuverte() {
+    if (window.matchMedia("(min-width:1200px")) {
+        offcanvasNavbar.classList.add('show');
+    }
+}; navOuverte();
