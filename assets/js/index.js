@@ -28,9 +28,14 @@ btnProjet.addEventListener('click', ()=> {
 
 
 const nav = document.getElementById('offcanvasNavbar');
+const li = document.querySelectorAll('li'); 
 
 function navOuverte() {
-    if (window.matchMedia("(min-width:1200px")) {
-        offcanvasNavbar.classList.add('show');
+    if (window.matchMedia("(min-width:1200px)")) {
+        nav.classList.add('show'); //la nav reste ouverte grâce à l'ajout de la class show
+        
+        li.forEach(function (allLi) { //selectionne tout les li avec le querySelectorAll
+            allLi.removeAttribute("data-bs-dismiss"); //enlève l'attribut data-bs-dismiss qui en mobile sert à ferme la nav quand on clique sur le lien
+        });
     }
 }; navOuverte();
