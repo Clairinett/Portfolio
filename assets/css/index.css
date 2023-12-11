@@ -18,7 +18,7 @@ header {
     padding: 1em;
 }
 body {
-    background: url(/assets/img/illu-abstrait.jpg) fixed no-repeat;
+    background: url(assets/img/illu-abstrait.jpg) fixed no-repeat;
     background-size: cover;
     padding: 10px;
 }
