@@ -46,6 +46,7 @@ section {
     align-items: center;
     padding: 10px;
     width: 100%;
+    margin-bottom: 5vh;
 }
 h2 {
     background-color: #CAE9FF;
@@ -214,6 +215,21 @@ h5 {
 /* CONTACT */
 #contact div  {
     display: flex;
+}
+
+/* ANIMATION */
+#presentation {
+    transform: translateY(10vh);
+    animation: fadeInUp 1s  ease-out forwards;
+}
+#competences, #experiences, #realisations, #contact {
+    transform: translateY(10vh);
+    animation: fadeInUp 2s  ease-out forwards;
+}
+@keyframes fadeInUp {
+    100% {
+        transform: none;
+    }
 }
 
 footer a {
