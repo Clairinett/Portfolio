@@ -65,6 +65,7 @@ h2 {
     background-color: #2F3A58;
     padding: 1em;
     border-radius: 50px;
+    
 }
 .textNOValeur {
     padding: 1em;
@@ -252,7 +253,10 @@ footer a i {
     }
     .formation {
         flex-direction: row;
-        justify-content:space-evenly;
+        align-items: center;
+    }
+    .formation span {
+        width: 40%;
     }
 }
 @media (min-width:768px) {
@@ -272,6 +276,9 @@ footer a i {
     }
     #page {
         padding: 0 7em 0 7em;
+    }
+    .formation span {
+        width: 50%;
     }
 }
 
