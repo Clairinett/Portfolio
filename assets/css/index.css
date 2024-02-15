@@ -132,30 +132,29 @@ i:not(nav i), footer a i {
     border-radius: 20px;
 }
 
-/* REALISATION */
-#realisationsPerso, #realisationsFormation, #realisationsProjet  {
-    flex-flow: row wrap;
-    justify-content: center;
-}
+/* REALISATION (boutons) */
 .btn-group {
     align-self: start;
     padding: 1em 0 1em 0;
     flex-wrap: wrap;
 }
 .btn-group button:first-child {
-    border-radius: 5px 0 0 0;
-}
-.btn-group button:nth-child(2) {
-    border-radius: 0 5px 0 0 !important;
+    border-radius: 5px 0 0 5px;
 }
 .btn-group button:last-child {
-    border-radius: 0 0 5px 5px !important;
+    border-radius: 0 5px 5px 0;
 }
 #realisations button {
     background-color: #1E2D4C;
 }
 #realisations button:hover {
     background-color: #2F3A58;
+}
+
+/* REALISATION */
+#realisationsPerso, #realisationsProjet  {
+    flex-flow: row wrap;
+    justify-content: center;
 }
 .info  {
     font-style: italic;
@@ -244,17 +243,7 @@ footer a i {
     padding: 0.5em;
 }
 
-@media (min-width:319px) {
-    .btn-group button:first-child {
-        border-radius: 5px 0 0 5px;
-    }
-    .btn-group button:nth-child(2) {
-        border-radius: 0 !important;
-    }
-    .btn-group button:last-child {
-        border-radius: 0 5px 5px 0 !important;
-    }
-}
+
 @media (min-width:576px) {
     #presentation article {
         display: flex;
