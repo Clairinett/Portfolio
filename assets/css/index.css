@@ -29,6 +29,15 @@ h1 {
     height: 220px;
     border-radius: 50px;
 }
+.titre {
+    background-color: rgb(220, 196, 231);
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 1em;
+    font-size: larger;
+    text-align: center;
+    color: #1B4965;
+}
 #page {
     background-color: #ffffff;
     border-radius: 50px;
@@ -139,11 +148,11 @@ i:not(nav i), footer a i {
     flex-wrap: wrap;
 }
 .btn-group button:first-child {
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px /*0 0 5px*/;
 }
-.btn-group button:last-child {
+/* .btn-group button:last-child {
     border-radius: 0 5px 5px 0;
-}
+} */
 #realisations button {
     background-color: #1E2D4C;
 }
