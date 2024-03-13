@@ -1,22 +1,3 @@
-const btnFormation = document.getElementById('btnFormation');
-const btnPerso = document.getElementById('btnPerso');
-const secPerso = document.getElementById('realisationsPerso');
-// const btnProjet = document.getElementById('btnProjet');
-// const secProjet = document.getElementById('realisationsProjet');
-
-// secProjet.style.display = "none";
-
-// btnPerso.addEventListener('click', ()=> {
-//     secPerso.style.display = "inline-flex";
-//     secProjet.style.display ="none";
-// });
-
-// btnProjet.addEventListener('click', ()=> {
-//     secProjet.style.display = "inline-flex";
-//     secPerso.style.display = "none";
-// });
-
-
 const nav = document.getElementById('offcanvasNavbar');
 const li = document.querySelectorAll('li'); 
 
