@@ -45,7 +45,6 @@ h1 {
     top: -100px;
 }
 h1, h2, h3 {
-    text-transform: uppercase;
     font-style: italic;
     color: #1B4965;
 }
@@ -75,7 +74,6 @@ h2 {
     background-color: #2F3A58;
     padding: 1em;
     border-radius: 50px;
-    
 }
 .textNOValeur {
     padding: 1em;
@@ -84,6 +82,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 #presentation img {
     padding: 10px;
@@ -98,29 +97,48 @@ h3 {
     align-self: start;
     padding-top: 1em;
 }
+ol {
+    margin: 0;
+}
 
 /* COMPETENCES */
-#competences div {
+#competences:not(#competences h2) {
+    padding: 0 1.5em 0 1.5em;
+}
+.ligne-competence:first-of-type {
+    padding-top: 1em;
+}
+.ligne-competence {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
     width: 100%;
 }
-#competences div:not(#competences div:last-child) {
-    border-bottom: dashed 2px #1E2D4C;
+.icone-competence {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 10px;
 }
-#competences figure, #contact figure {
+.ligne-competence figure, #contact figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#competences figcaption, #contact figcaption {
+.ligne-competence figcaption, #contact figcaption {
     font-size: smaller;
+}
+.ligne-competence h3 {
+    text-align:justify;
 }
 i:not(nav i), footer a i {
     font-size: 2em;
-    padding: 17px;
+    padding: 15px;
     color: #1E2D4C;
+}
+
+/* EXPERIENCES */
+#experiences > article > div {
+    padding: 0 10px 10px 10px;
 }
 .formation {
     display: flex;
@@ -129,12 +147,6 @@ i:not(nav i), footer a i {
 .formation img {
     align-self: center;
 }
-
-/* EXPERIENCES */
-#experiences > article > div {
-    padding: 0 10px 10px 10px;
-}
-
 .logo {
     width: 9em;
     padding: 1em;
@@ -243,9 +255,6 @@ footer a i {
     #presentation > article figure {
         padding-right: 1em;
     }
-    #competences:not(#competences h2) {
-        padding: 0 3em 0 3em;
-    }
     .formation {
         flex-direction: row;
         align-items: center;
@@ -257,6 +266,24 @@ footer a i {
 @media (min-width:768px) {
     body, #page {
         padding: 0 1.5em 0 1.5em;
+    }
+    .ligne-competence {
+        flex-direction: row;
+    }
+    .ligne-competence > h3 {
+        width: 25%;
+    }
+    .icone-competence {
+        padding: 0;
+        width: 75%;
+    }
+}
+@media (min-width:900px) {
+    #competences:not(#competences h2) {
+        padding: 0 5.5em 0 5.5em;
+    }
+    .icone-competence {
+        justify-content: space-between;
     }
 }
 @media (min-width:1200px) { /*à partir de 1200px la nav est ouverte voir js*/
@@ -270,10 +297,14 @@ footer a i {
         padding: 0 50px 0 350px;
     }
     #page {
-        padding: 0 7em 0 7em;
+        padding: 0 4em 0 4em;
     }
     .formation span {
         width: 50%;
     }
+    #competences:not(#competences h2) {
+        padding: 0 2.5em 0 2.5em;
+    }
+    
 }
 
