@@ -1,6 +1,9 @@
 * {
     font-family: 'Rubik', sans-serif;
 }
+a {
+    color: #1B4965;
+}
 b {
     font-weight: 500;
     font-size: larger;
