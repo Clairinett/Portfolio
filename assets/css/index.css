@@ -27,12 +27,12 @@ h1 {
     padding: 1em;
     background-color: #CAE9FF;
     height: 220px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .titre {
     background-color: rgb(220, 196, 231);
     padding: 15px;
-    border-radius: 50px;
+    border-radius: 10px;
     margin-top: 1em;
     font-size: larger;
     text-align: center;
@@ -40,7 +40,7 @@ h1 {
 }
 #page {
     background-color: #ffffff;
-    border-radius: 50px;
+    border-radius: 10px;
     position: relative;
     top: -100px;
 }
@@ -59,7 +59,7 @@ section {
 h2 {
     background-color: #CAE9FF;
     padding: 15px;
-    border-radius: 50px;
+    border-radius: 10px;
     margin-top: 1em;
 }
 
@@ -67,13 +67,13 @@ h2 {
 #presentation article, #experiences article {
     background-color: #1E2D4C;
     margin-top: 10px;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 10px;
 }
 .textValeur {
     background-color: #2F3A58;
     padding: 1em;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .textNOValeur {
     padding: 1em;
@@ -87,7 +87,7 @@ h2 {
 #presentation img {
     padding: 10px;
     width: 10em;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .whiteText {
     color: #ffffff;
@@ -167,6 +167,9 @@ i:not(nav i), footer a i {
     padding: 0.8em;
     width: max-content;
 }
+.boiteRealisation > h5 {
+    border-radius: 0 0 10px 10px;
+}
 h5 {
     text-align: center;
     font-size: smaller;
@@ -191,6 +194,7 @@ h5 {
 }
 .carteRealisation img {
     width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 .carteRealisation:hover .textHover {
     opacity: 1;
@@ -238,7 +242,7 @@ footer a {
     justify-content: center;
     background-color: #CAE9FF;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 footer a i {
     font-size: 1em;
